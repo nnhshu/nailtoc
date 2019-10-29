@@ -180,7 +180,7 @@ h5 {
   background-color: #ffffff;
   margin: 0px;
   width: 230px;
-  padding: 40px 50px;
+  padding: 60px 50px;
 }
 
 #menuBar .navbar-ex1-collapse {
@@ -610,18 +610,8 @@ h5 {
 }
 
 #calltoaction {
+  position: relative;
   margin-top: 130px;
-}
-
-#calltoaction ::before {
-  background: url("/dist/img/girl.png") no-repeat;
-  content: "";
-  background-size: 100% auto;
-  position: absolute;
-  left: -50px;
-  height: 395px;
-  width: 221px;
-  bottom: 0;
 }
 
 #calltoaction .cta-content {
@@ -684,5 +674,124 @@ h5 {
 #showrooms .ab-showroom-items .ab-showroom-item img {
   height: 42px;
   margin-right: 10px;
+}
+
+#footer {
+  background-attachment: fixed;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 0;
+  position: relative;
+}
+
+#footer .backToTop {
+  position: absolute;
+  left: 50%;
+  top: -25px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background-color: #ec5598;
+  border-radius: 100%;
+  display: block;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+#footer .backToTop i {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 45px;
+  color: #ffffff;
+}
+
+#footer .footerInfo {
+  padding: 96px 0 60px 0;
+  border-top: 4px solid #ec5598;
+}
+
+#footer .footerText .footerLogo {
+  text-align: center;
+  margin-bottom: 40px;
+  display: block;
+}
+
+@media (min-width: 320px) {
+  #menuBar .navbar-brand {
+    width: 95px;
+    padding: 10px;
+    top: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    position: inherit;
+  }
+  #menuBar .navbar-ex1-collapse ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  #menuBar .navbar-ex1-collapse ul li a {
+    padding: 10px 15px;
+  }
+  .navbar-header {
+    height: 72px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar-header .navbar-toggle {
+    display: block !important;
+    background-color: #ec5598;
+    border-color: #ec5598;
+    margin-top: 17px;
+    border-radius: 0;
+    padding: 11px 10px;
+  }
+  .navbar-header span.icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    margin-top: 2px;
+    background-color: #ffffff;
+  }
+  .main-slider .slide {
+    height: 400px;
+  }
+  .aboutSection .sepcialContainer {
+    position: relative !important;
+    width: 100% !important;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+  .aboutSection .rightPadding {
+    padding: 50px 15px;
+  }
+  .aboutSection .imagebox {
+    border: 5px solid #ffffff;
+  }
+  .aboutSection .imagebox img {
+    margin: -10px 0 10px 10px;
+    width: 100%;
+  }
+  .aboutSection .aboutInfo {
+    padding: 0px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

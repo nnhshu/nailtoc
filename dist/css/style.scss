@@ -168,7 +168,7 @@ h5 {
         background-color: #ffffff;
         margin: 0px;
         width: 230px;
-        padding: 40px 50px;
+        padding: 60px 50px;
     }
     .navbar-ex1-collapse {
         display: flex;
@@ -555,17 +555,8 @@ h5 {
     }
 }
 #calltoaction{
+    position: relative;
     margin-top: 130px;
-    ::before{
-        background: url('/dist/img/girl.png') no-repeat;
-        content: "";
-        background-size: 100% auto;
-        position: absolute;
-        left: -50px;
-        height: 395px;
-        width: 221px;
-        bottom: 0;
-    }
     .cta-content{
         background: url(images/cta-bg.png) no-repeat right bottom #EFCEC9;
         padding: 70px;
@@ -582,6 +573,16 @@ h5 {
         }
         
     }
+    // ::after{
+    //     background: url('/dist/img/girl.png') no-repeat;
+    //     content: "";
+    //     background-size: 100% auto;
+    //     position: absolute;
+    //     left: -50px;
+    //     height: 395px;
+    //     width: 221px;
+    //     bottom: 0;
+    // }
 }
 
 // showroom section
@@ -623,4 +624,116 @@ h5 {
             }
         }
     }
+}
+
+#footer{
+    background-attachment: fixed;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 0;
+    position: relative;
+    .backToTop{
+        position: absolute;
+        left: 50%;
+        top: -25px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        background-color: #ec5598;
+        border-radius: 100%;
+        display: block;
+        transition: all 0.3s ease-in-out;
+        transform: translate(-50%, 0);
+        i{
+            font-size: 35px;
+            font-weight: bold;
+            line-height: 45px;
+            color: #ffffff;
+        }
+    }
+    .footerInfo{
+        padding: 96px 0 60px 0;
+        border-top: 4px solid #ec5598;
+    }
+    .footerText{
+        .footerLogo{
+            text-align: center;
+            margin-bottom: 40px;
+            display: block;
+        }
+    }
+}
+@media (min-width: 320px){
+    #menuBar{
+        .navbar-brand{
+            width: 95px;
+            padding: 10px;
+            top: 0;
+            box-shadow: none;
+            position: inherit;
+        }
+        .navbar-ex1-collapse{
+            ul{    
+                flex-direction: column;
+                width: 100%;
+                li{
+                    a{
+                        padding: 10px 15px;
+                    }
+                }
+            }
+        }
+    }
+    .navbar-header {
+        height: 72px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+        .navbar-toggle{
+            display: block !important;
+            background-color: #ec5598;
+            border-color: #ec5598;
+            margin-top: 17px;
+            border-radius: 0;
+            padding: 11px 10px;
+        }
+        span.icon-bar {
+            display: block;
+            width: 22px;
+            height: 2px;
+            border-radius: 1px;
+            margin-top: 2px;
+            background-color: #ffffff;
+        }
+    }
+
+    .main-slider{
+        .slide{
+            height: 400px;
+        }
+    }
+    .aboutSection{
+        .sepcialContainer {
+            position: relative !important;
+            width: 100% !important;
+            transform: translate(0%,0%);
+        }
+        .rightPadding {
+            padding: 50px 15px;
+        }
+        .imagebox {
+            border: 5px solid #ffffff;
+            img{
+                margin: -10px 0 10px 10px;
+                width: 100%;
+            }
+        }
+        .aboutInfo{
+            padding: 0px;
+        }
+    }
+    
 }
